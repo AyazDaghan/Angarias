@@ -8,56 +8,49 @@ body {
     background-position: center;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
     text-align: center;
 }
 
-/* Giriş Kutusu */
-.login-container {
-    width: 350px;
-    padding: 25px;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.15); /* Hafif saydam beyaz arka plan */
-    backdrop-filter: blur(10px); /* Blur efekti */
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Başlık */
-.login-container h2 {
-    font-size: 22px;
-    margin-bottom: 15px;
+/* En üstteki büyük başlık */
+.header-text {
+    font-size: 28px;
     font-weight: bold;
-    color: #ffffff;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    margin-top: -150px; /* Daha üste taşıdık */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-/* Input Kutuları */
-input {
-    width: 90%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 2px solid rgba(255, 255, 255, 0.4);
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    font-size: 14px;
-    border-radius: 10px;
-    outline: none;
-    transition: all 0.3s ease;
+/* Altındaki mesaj */
+.main-text {
+    font-size: 22px;
+    font-weight: normal;
+    margin-top: 10px;
 }
 
-input::placeholder {
-    color: rgba(255, 255, 255, 0.7);
+/* Butona basılınca çıkan "Seni Çok Seviyorum!" mesajı */
+#loveMessage {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ff69b4;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
-input:focus {
-    border: 2px solid white;
-    background: rgba(255, 255, 255, 0.3);
+.hidden {
+    opacity: 0;
 }
 
-/* Giriş Butonu */
+/* Butona basınca görünür olacak */
+#loveMessage.show {
+    opacity: 1;
+}
+
+/* Buton Stili */
 button {
     background: linear-gradient(45deg, #ff69b4, #ff1493);
     color: white;
@@ -65,21 +58,13 @@ button {
     padding: 12px;
     font-size: 16px;
     cursor: pointer;
-    width: 95%;
+    width: 250px;
     border-radius: 10px;
     transition: all 0.3s ease;
+    margin-top: 30px;
 }
 
 button:hover {
     background: linear-gradient(45deg, #ff1493, #ff69b4);
     transform: scale(1.05);
-}
-
-/* İpucu Metni */
-.hint {
-    margin-top: 15px;
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.8);
-    font-style: italic;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }

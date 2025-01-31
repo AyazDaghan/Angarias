@@ -6,10 +6,9 @@ body {
     background-image: url('./Köprü.jpg'); /* Arka plan */
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    min-height: 100vh; /* Sayfanın aşağı kaymasını sağlar, üstü kesmez */
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     color: white;
     text-align: center;
@@ -19,32 +18,37 @@ body {
 .page-title {
     font-size: 36px;
     font-weight: bold;
+    margin-top: 20px; /* Üst boşluk eklendi, başlık sıkışmayacak */
     margin-bottom: 40px;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-    color: #ff4d88;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 10px 30px;
+    color: white;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); /* Daha belirgin gölge */
+    background: rgba(0, 0, 0, 0.5); /* Hafif saydam arka plan */
+    padding: 15px 40px;
     border-radius: 15px;
 }
 
 /* Ülke Bölümleri */
 .country-section {
     width: 80%;
+    margin-top: 50px; /* Ülke bölümlerinin yukarıda sıkışmasını engeller */
     margin-bottom: 40px;
     padding: 15px;
     border-radius: 15px;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.3); /* Saydam arka plan ile daha belirgin */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Ülke Başlıkları */
 .country-title {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #ff99bb;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    text-align: center;
+    color: #ffffff;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9); /* Daha koyu gölge */
+    background: rgba(0, 0, 0, 0.5); /* Saydam arka plan */
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
 }
 
 /* Şehir Kutuları */
@@ -74,40 +78,8 @@ body {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Şehir İsimleri */
-.city-name {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 10px;
-}
-
-/* Münih */
-#munih {
-    background-image: url('./Münih.jpg');
-}
-
-/* Prag */
-#prag {
-    background-image: url('./Prag.jpg');
-}
-
-/* Roma */
-#roma {
-    background-image: url('./Roma.jpg');
-}
-
-/* İstanbul */
-#istanbul {
-    background-image: url('./istanbul.jpg');
-}
-
-/* Ankara */
-#ankara {
-    background-image: url('./ankara.jpg');
-}
-
-/* Hover Efekti */
-.city-box:hover {
-    transform: scale(1.1);
-    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+/* Sayfanın yukarı kaymasını sağlamak için boşluk ekleyelim */
+.spacer {
+    height: 50px;
+    width: 100%;
 }

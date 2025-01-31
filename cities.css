@@ -106,6 +106,10 @@ body {
     background-image: url('./Roma.jpg');
 }
 
+#milano {
+    background-image: url('./MilanoBG2.jpg');
+}
+
 /* İstanbul */
 #istanbul {
     background-image: url('./istanbul.jpg');

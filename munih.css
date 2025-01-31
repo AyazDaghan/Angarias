@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Poppins", Arial, sans-serif;
-    background-image: url('./MünihBG.jpg'); /* Arka plan */
+    background-image: url('./MünihBG2.jpg'); /* Arka plan */
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -28,13 +28,15 @@ body {
 /* Galeri */
 .gallery {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* Soldan hizalama */
     flex-wrap: wrap;
     gap: 20px;
     margin: 40px 0;
+    width: 80%;
 }
 
-.gallery img, .video-box {
+/* Resim ve Video Boyutları */
+.gallery img, .gallery video {
     width: 22%; /* 4 öğe yan yana olacak şekilde */
     height: auto;
     border-radius: 15px;
@@ -42,21 +44,10 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.gallery img:hover, .video-box:hover {
+/* Hover Efekti */
+.gallery img:hover, .gallery video:hover {
     transform: scale(1.1);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
-}
-
-/* Video Formatı */
-.video-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.video-box video {
-    width: 100%;
-    border-radius: 15px;
 }
 
 /* Geri Dön Butonu */

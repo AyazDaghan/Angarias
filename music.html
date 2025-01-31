@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arka Plan Müziği</title>
+</head>
+<body>
+
+    <!-- İlk Müzik (Beni Sevdi Benden Çok) -->
+    <audio id="beni-sevdi" autoplay>
+        <source src="Beni Sevdi Benden Çok.mp3" type="audio/mp3">
+        Tarayıcınız müzik etiketini desteklemiyor.
+    </audio>
+
+    <!-- İkinci Müzik (Gömülür) -->
+    <audio id="gomulur" style="display: none;">
+        <source src="Gömülür.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        let firstMusic = document.getElementById("beni-sevdi");
+        let secondMusic = document.getElementById("gomulur");
+
+        // İlk müzik başladığında ses seviyesini %50 yap
+        firstMusic.volume = 0.5;
+        secondMusic.volume = 0.5;
+
+        // 293 saniye (4 dakika 53 saniye) sonra ikinci müziği başlat ve birincisini durdur
+        setTimeout(() => {
+            firstMusic.pause(); // İlk müziği durdur
+            firstMusic.currentTime = 0; // Sıfırla
+            secondMusic.play(); // İkinci müziği başlat
+        }, 293000); // 293 saniye = 293000 milisaniye
+    </script>
+
+</body>
+</html>

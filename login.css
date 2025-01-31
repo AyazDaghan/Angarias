@@ -1,0 +1,85 @@
+/* Login Sayfası Stilleri */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('./GALATA.jpg'); /* Arka plan */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+/* Giriş Kutusu */
+.login-container {
+    width: 320px;
+    padding: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.15); /* Hafif saydam beyaz arka plan */
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Başlık */
+.login-container h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Input Kutuları */
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 14px;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+input:focus {
+    border: 2px solid white;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Giriş Butonu */
+button {
+    background: linear-gradient(45deg, #ff69b4, #ff1493);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 95%;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #ff1493, #ff69b4);
+    transform: scale(1.05);
+}
+
+/* İpucu Yazısı */
+.hint {
+    margin-top: 15px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    font-style: italic;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}

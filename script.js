@@ -1,10 +1,10 @@
-// Giriş Kontrolü
+// Kullanıcı giriş kontrolü
 function login() {
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
 
     var correctUsername = "Angarias";
-    var correctPassword = "Luna"; // Örnek şifre, değiştirebilirsin.
+    var correctPassword = "Umay"; // Örnek şifre, değiştirebilirsin.
 
     if (username === correctUsername && password === correctPassword) {
         window.location.href = "index.html"; // Başarılı giriş yönlendirme
@@ -24,8 +24,8 @@ window.onload = function() {
     audio1.volume = 0.5;
     audio2.volume = 0.5;
 
-    audio1.play();
-    setTimeout(() => audio2.play(), 289000); // İkinci şarkıyı 30 saniye sonra başlat
+    audio1.play().catch(error => console.log("Otomatik oynatma engellendi, kullanıcı etkileşimi bekleniyor."));
+    setTimeout(() => audio2.play().catch(error => console.log("Otomatik oynatma engellendi, kullanıcı etkileşimi bekleniyor.")), 30000);
 
     document.getElementById("musicToggle").addEventListener("click", function() {
         if (!audio1.paused) {
@@ -34,7 +34,7 @@ window.onload = function() {
             this.innerText = "Müziği Aç";
         } else {
             audio1.play();
-            setTimeout(() => audio2.play(), 30000);
+            setTimeout(() => audio2.play(), 293000);
             this.innerText = "Müziği Kapat";
         }
     });

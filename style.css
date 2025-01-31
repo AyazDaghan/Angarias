@@ -1,57 +1,20 @@
-/* Giriş Sayfası Arka Planı */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-image: url('GALATA.jpg'); /* Arka plan görseli */
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column; /* İçeriği dikey ortala */
-    justify-content: center;
-    align-items: center;
-}
-
-/* Giriş Kutusu */
-.login-container {
-    width: 320px;
-    padding: 20px;
     text-align: center;
-    background: rgba(255, 255, 255, 0.85); /* Daha saydam ama okunabilir */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: -50px; /* Kutuyu yukarı al */
+    font-family: Arial, sans-serif;
+    background-color: #ffe4e1;
+    color: #333;
 }
-
-/* Giriş Kutusu İçindeki Öğeler */
-input {
-    width: 90%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.container {
+    margin-top: 50px;
 }
-
 button {
     background-color: #ff69b4;
     color: white;
-    padding: 10px;
     border: none;
+    padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
-    border-radius: 5px;
-    margin-top: 10px;
 }
-
 button:hover {
     background-color: #ff1493;
-}
-
-/* İpucu Yazısı */
-.hint {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #333; /* Daha belirgin renk */
-    font-style: italic;
-    font-weight: bold;
 }

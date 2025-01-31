@@ -17,18 +17,33 @@ body {
 
 /* Sayfa Başlığı */
 .page-title {
-    font-size: 32px;
+    font-size: 36px;
     font-weight: bold;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    color: #ff4d88;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 30px;
+    border-radius: 15px;
 }
 
 /* Ülke Başlıkları */
+.country-section {
+    width: 80%;
+    margin-bottom: 40px;
+    padding: 15px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Ülke Başlığı */
 .country-title {
-    font-size: 26px;
+    font-size: 28px;
     font-weight: bold;
-    margin-top: 30px;
-    text-decoration: underline;
+    margin-bottom: 10px;
+    color: #ff99bb;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* Şehir Kutuları */
@@ -36,23 +51,40 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 20px;
+    gap: 20px;
 }
 
+/* Şehir Kutularının Tasarımı */
 .city-box {
     display: inline-block;
-    background: linear-gradient(45deg, #ff69b4, #ff1493);
+    background: linear-gradient(45deg, #ff66a3, #ff1493);
     color: white;
     text-decoration: none;
-    padding: 15px 30px;
-    font-size: 20px;
+    padding: 20px 40px;
+    font-size: 22px;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 15px;
     margin: 10px;
-    transition: transform 0.3s ease, background 0.3s ease;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Hover Efekti */
 .city-box:hover {
-    background: linear-gradient(45deg, #ff1493, #ff69b4);
+    background: linear-gradient(45deg, #ff1493, #ff66a3);
     transform: scale(1.1);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobil uyumluluk */
+@media (max-width: 768px) {
+    .city-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .city-box {
+        width: 80%;
+        text-align: center;
+    }
 }

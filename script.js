@@ -4,7 +4,7 @@ function login() {
     var password = document.getElementById("password").value;
 
     var correctUsername = "Angarias";
-    var correctPassword = "Luna"; // Örnek şifre, değiştirebilirsin.
+    var correctPassword = "Umay"; // Örnek şifre, değiştirebilirsin.
 
     if (username === correctUsername && password === correctPassword) {
         window.location.href = "index.html"; // Başarılı giriş yönlendirme

@@ -7,7 +7,7 @@ function login() {
 
     // Belirlenen kullanıcı adı ve şifre
     var correctUsername = "Angarias";
-    var correctPassword = "Luna"; // Örnek olarak "Luna" kullandım, istediğin şifreyi koyabilirsin.
+    var correctPassword = "Umay"; // Örnek olarak "Luna" kullandım, istediğin şifreyi koyabilirsin.
 
     if (username === correctUsername && password === correctPassword) {
         window.location.href = "index.html"; // Başarılı giriş olursa yönlendir

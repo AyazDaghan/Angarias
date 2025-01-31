@@ -31,14 +31,15 @@ body {
     grid-template-columns: repeat(4, 1fr); /* Her satırda 4 öğe olacak */
     gap: 20px;
     margin: 40px 0;
-    width: 80%;
+    width: 90%;
     justify-content: center;
 }
 
 /* Resim ve Video Boyutları */
 .gallery img, .gallery video {
     width: 100%; /* Grid sisteminde tam genişlik alması için */
-    height: auto;
+    height: 100%; /* Yüksekliği eşitle */
+    object-fit: cover; /* Resimlerin orantısını koruyarak kırp */
     border-radius: 15px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;

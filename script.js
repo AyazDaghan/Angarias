@@ -25,7 +25,7 @@ window.onload = function() {
     audio2.volume = 0.5;
 
     audio1.play();
-    setTimeout(() => audio2.play(), 30000); // İkinci şarkıyı 30 saniye sonra başlat
+    setTimeout(() => audio2.play(), 293000); // İkinci şarkıyı 293 saniye sonra başlat
 
     document.getElementById("musicToggle").addEventListener("click", function() {
         if (!audio1.paused) {

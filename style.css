@@ -1,11 +1,12 @@
-/* Giriş Sayfası Arka Planı */
+/* Genel Stiller */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-image: url('/GALATA.jpg'); /* Arka plan görseli */
+    background-image: url('./GALATA.jpg'); /* Arka plan görseli */
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -40,6 +41,8 @@ button {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
 }
 
 button:hover {
@@ -55,17 +58,18 @@ button:hover {
 
 /* Ana Sayfa (index.html) İçin Yeni Stiller */
 h1 {
-    position: absolute;
-    top: 20px; /* Üste çıkarttık */
     font-size: 30px;
     font-weight: bold;
-    color: white; /* Renk beyaz */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Hafif gölge efekti */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
 }
 
 /* Ana Yazılar */
 .main-text {
     font-size: 22px;
     font-weight: normal;
-    margin-top: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
 }

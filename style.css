@@ -3,11 +3,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-image: url('./GALATA.jpg'); /* Arka plan görseli */
+    background-image: url('/GALATA.jpg'); /* Arka plan görseli */
     background-size: cover;
     background-position: center;
     height: 100vh;
     display: flex;
+    flex-direction: column; /* İçeriği dikey ortala */
     justify-content: center;
     align-items: center;
 }
@@ -17,11 +18,13 @@ body {
     width: 320px;
     padding: 20px;
     text-align: center;
-    background: rgba(255, 255, 255, 0.8); /* Arka planı biraz saydam yap */
+    background: rgba(255, 255, 255, 0.85); /* Daha saydam ama okunabilir */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: -50px; /* Kutuyu yukarı al */
 }
 
+/* Giriş Kutusu İçindeki Öğeler */
 input {
     width: 90%;
     padding: 10px;
@@ -37,15 +40,18 @@ button {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 button:hover {
     background-color: #ff1493;
 }
 
+/* İpucu Yazısı */
 .hint {
     margin-top: 10px;
     font-size: 14px;
-    color: gray;
+    color: #333; /* Daha belirgin renk */
     font-style: italic;
+    font-weight: bold;
 }

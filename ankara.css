@@ -28,17 +28,18 @@ body {
 /* Galeri */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Her satırda 4 öğe olacak */
+    grid-template-columns: repeat(2, 1fr); /* Her satırda 2 öğe olacak */
     gap: 20px;
     margin: 40px 0;
-    width: 80%;
+    width: 60%;
     justify-content: center;
 }
 
 /* Resim Boyutları */
 .gallery img {
     width: 100%; /* Grid sisteminde tam genişlik alması için */
-    height: auto;
+    height: 300px; /* Sabit yükseklik */
+    object-fit: cover; /* Oranı bozmadan sığdır */
     border-radius: 15px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -46,7 +47,7 @@ body {
 
 /* Hover Efekti */
 .gallery img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
 }
 

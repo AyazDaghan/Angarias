@@ -8,18 +8,19 @@
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
-    <!-- Konfeti sonrası çıkacak sevgi mesajı -->
-    <h1 id="loveMessage" class="hidden">Seni Çok Seviyorum! 💖</h1>
-
-    <!-- Ana mesaj -->
-    <h2 class="header-text">Gerçekten unuttuğumu mu sandın? 🎉<br>  
+    <!-- En üstteki mesaj -->
+    <h1 class="header-text">Gerçekten unuttuğumu mu sandın? 🎉<br>  
         Sürprizime hoş geldin doğum günü kızı! 🎈
-    </h2>
+    </h1>
 
+    <!-- Altına gelecek mesaj -->
     <div class="main-text">
         <p>İyi ki doğdun, aşkım</p>
         <p>Bu küçük sürpriz senin için 💖</p>
     </div>
+
+    <!-- Butona basılınca çıkacak ek mesaj -->
+    <h2 id="loveMessage" class="hidden">Seni Çok Seviyorum! 💖</h2>
 
     <!-- Buton -->
     <button id="surpriseBtn" onclick="gosterSasirticiMesaj()">🎊 Tıkla ve sürprizi gör! 🎊</button>

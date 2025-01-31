@@ -38,6 +38,11 @@
             let loveMessage = document.getElementById('loveMessage');
             loveMessage.classList.remove('hidden');
             loveMessage.classList.add('show');
+
+            // 10 saniye sonra yeni sayfaya yönlendir
+            setTimeout(function() {
+                window.location.href = "cities.html";
+            }, 10000);
         }
     </script>
 </body>

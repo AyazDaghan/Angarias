@@ -8,8 +8,11 @@ body {
     background-position: center;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white; /* Genel yazı rengi */
+    text-align: center;
 }
 
 /* Giriş Kutusu */
@@ -48,4 +51,21 @@ button:hover {
     font-size: 14px;
     color: gray;
     font-style: italic;
+}
+
+/* Ana Sayfa (index.html) İçin Yeni Stiller */
+h1 {
+    position: absolute;
+    top: 20px; /* Üste çıkarttık */
+    font-size: 30px;
+    font-weight: bold;
+    color: white; /* Renk beyaz */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Hafif gölge efekti */
+}
+
+/* Ana Yazılar */
+.main-text {
+    font-size: 22px;
+    font-weight: normal;
+    margin-top: 50px;
 }

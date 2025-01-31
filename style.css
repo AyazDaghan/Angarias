@@ -19,15 +19,16 @@ body {
 .header-text {
     font-size: 28px;
     font-weight: bold;
-    margin-top: -200px; /* Daha üste taşıdık */
+    position: absolute;
+    top: 30px; /* En üste taşındı */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-/* Altındaki mesaj */
+/* Altındaki mesaj (Daha aşağı çekildi) */
 .main-text {
     font-size: 22px;
     font-weight: normal;
-    margin-top: -30px; /* Daha yukarı çıkması için küçülttük */
+    margin-top: 150px; /* Daha aşağı taşıdık */
 }
 
 /* Butona basılınca yukarıdan gelen "Seni Çok Seviyorum!" mesajı */
@@ -55,7 +56,7 @@ body {
     100% { transform: scale(1.1); }
 }
 
-/* Buton Stili */
+/* Buton ve alt metin aşağıda */
 button {
     background: linear-gradient(45deg, #ff69b4, #ff1493);
     color: white;
@@ -66,7 +67,7 @@ button {
     width: 250px;
     border-radius: 10px;
     transition: all 0.3s ease;
-    margin-top: 20px; /* Butonun da biraz yukarı çıkmasını sağladık */
+    margin-top: 40px; /* Butonun daha aşağıda olması için artırdık */
 }
 
 button:hover {

@@ -27,7 +27,7 @@ body {
     border-radius: 15px;
 }
 
-/* Ülke Başlıkları */
+/* Ülke Bölümleri */
 .country-section {
     width: 80%;
     margin-bottom: 40px;
@@ -37,31 +37,36 @@ body {
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Ülke Başlığı */
+/* Ülke Başlıkları */
 .country-title {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 10px;
     color: #ff99bb;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
 }
 
 /* Şehir Kutuları */
 .city-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    justify-content: flex-start; /* Sola hizaladık */
+    margin-left: 30px; /* Ülkenin soluna yaslandı */
 }
 
 /* Şehir Kutularının Tasarımı */
 .city-box {
-    display: inline-block;
-    background: linear-gradient(45deg, #ff66a3, #ff1493);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
     color: white;
     text-decoration: none;
-    padding: 20px 40px;
-    font-size: 22px;
+    font-size: 26px;
     font-weight: bold;
     border-radius: 15px;
     margin: 10px;
@@ -69,22 +74,40 @@ body {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Hover Efekti */
-.city-box:hover {
-    background: linear-gradient(45deg, #ff1493, #ff66a3);
-    transform: scale(1.1);
-    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+/* Şehir İsimleri */
+.city-name {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
 }
 
-/* Mobil uyumluluk */
-@media (max-width: 768px) {
-    .city-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .city-box {
-        width: 80%;
-        text-align: center;
-    }
+/* Münih */
+#munih {
+    background-image: url('./munih.jpg');
+}
+
+/* Prag */
+#prag {
+    background-image: url('./prag.jpg');
+}
+
+/* Roma */
+#roma {
+    background-image: url('./roma.jpg');
+}
+
+/* İstanbul */
+#istanbul {
+    background-image: url('./istanbul.jpg');
+}
+
+/* Ankara */
+#ankara {
+    background-image: url('./ankara.jpg');
+}
+
+/* Hover Efekti */
+.city-box:hover {
+    transform: scale(1.1);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
 }

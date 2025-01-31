@@ -19,7 +19,7 @@ body {
 .header-text {
     font-size: 28px;
     font-weight: bold;
-    margin-top: -150px; /* Daha üste taşıdık */
+    margin-top: -200px; /* Daha üste taşıdık */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -27,7 +27,7 @@ body {
 .main-text {
     font-size: 22px;
     font-weight: normal;
-    margin-top: 10px;
+    margin-top: -30px; /* Daha yukarı çıkması için küçülttük */
 }
 
 /* Butona basılınca yukarıdan gelen "Seni Çok Seviyorum!" mesajı */
@@ -66,7 +66,7 @@ button {
     width: 250px;
     border-radius: 10px;
     transition: all 0.3s ease;
-    margin-top: 30px;
+    margin-top: 20px; /* Butonun da biraz yukarı çıkmasını sağladık */
 }
 
 button:hover {

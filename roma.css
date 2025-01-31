@@ -37,7 +37,7 @@ body {
 
 /* Resim ve Video Boyutları */
 .gallery img, .gallery video {
-    width: 22%; /* 4 öğe yan yana olacak şekilde */
+    width: calc(25% - 20px); /* 4 öğe yan yana olacak şekilde */
     height: auto;
     border-radius: 15px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);

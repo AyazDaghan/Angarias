@@ -5,13 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doğum Günü Sürprizi</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
-    <h1>Gerçekten unuttuğumu mu sandın? Sürprizime hoş geldin doğum günü kızı 🎉</h1>
+    <!-- Konfeti sonrası çıkacak sevgi mesajı -->
+    <h1 id="loveMessage" class="hidden">Seni Çok Seviyorum! 💖</h1>
+
+    <!-- Ana mesaj -->
+    <h2 class="header-text">Gerçekten unuttuğumu mu sandın? 🎉<br>  
+        Sürprizime hoş geldin doğum günü kızı! 🎈
+    </h2>
+
     <div class="main-text">
         <p>İyi ki doğdun, aşkım</p>
         <p>Bu küçük sürpriz senin için 💖</p>
     </div>
-    <button onclick="gosterSasirticiMesaj()">Tıkla ve sürprizi gör!</button>
+
+    <!-- Buton -->
+    <button id="surpriseBtn" onclick="gosterSasirticiMesaj()">🎊 Tıkla ve sürprizi gör! 🎊</button>
+
+    <script>
+        function gosterSasirticiMesaj() {
+            // Konfeti efekti
+            confetti({
+                particleCount: 200,
+                spread: 100,
+                origin: { y: 0.6 }
+            });
+
+            // "Seni Çok Seviyorum" mesajını göster
+            document.getElementById('loveMessage').classList.remove('hidden');
+        }
+    </script>
 </body>
 </html>

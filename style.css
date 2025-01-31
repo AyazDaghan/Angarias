@@ -13,6 +13,7 @@ body {
     align-items: center;
     color: white;
     text-align: center;
+    overflow: hidden; /* Sayfanın yukarı/aşağı kaymasını önler */
 }
 
 /* En üstteki büyük başlık */
@@ -73,4 +74,13 @@ button {
 button:hover {
     background: linear-gradient(45deg, #ff1493, #ff69b4);
     transform: scale(1.05);
+}
+
+/* 🔹 Müzik iframe gizli ancak çalışıyor */
+#musicFrame {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: none;
+    visibility: hidden;
 }

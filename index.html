@@ -8,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
+
     <!-- "Seni Çok Seviyorum!" Mesajı (Başta gizli) -->
     <h2 id="loveMessage" class="hidden">Seni Çok Seviyorum! 💖</h2>
 
@@ -24,6 +25,9 @@
 
     <!-- Buton -->
     <button id="surpriseBtn" onclick="gosterSasirticiMesaj()">🎊 Tıkla ve sürprizi gör! 🎊</button>
+
+    <!-- Müzik Çalar (Gizli iframe) -->
+    <iframe src="music.html" allow="autoplay" id="musicFrame" style="display: none;"></iframe>
 
     <script>
         function gosterSasirticiMesaj() {
@@ -45,5 +49,6 @@
             }, 10000);
         }
     </script>
+
 </body>
 </html>
